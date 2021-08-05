@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "840402800145",
+    "project_id": "restaurante-55891",
+    "storage_bucket": "restaurante-55891.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840402800145:android:edf1f724a0cb04d400ebb0",
+        "android_client_info": {
+          "package_name": "Alex.Gasulla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840402800145-jqhmfvk21bk6ons5coutfsmk76v8caks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7DeXjZQpwtcGKtZEmE4kz02Kg4rU3Al8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840402800145-jqhmfvk21bk6ons5coutfsmk76v8caks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

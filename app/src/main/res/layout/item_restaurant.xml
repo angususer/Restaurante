@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:id="@+id/iv_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rest_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp"
+        android:src="@mipmap/ic_launcher"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nafess Online"
+        android:textAlignment="viewEnd"
+        android:id="@+id/rest_name"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="#000"
+        app:layout_constraintStart_toEndOf="@id/iv_logo"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/rest_food"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rest_food"
+        android:text="Sea Food"
+        app:layout_constraintTop_toBottomOf="@id/rest_name"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="@id/rest_name"
+        app:layout_constraintStart_toEndOf="@id/iv_logo"
+        android:gravity="end"
+        android:textColor="#444"
+        app:layout_constraintBottom_toTopOf="@id/rest_time"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rest_time"
+        android:text="45 Mins"
+        app:layout_constraintTop_toBottomOf="@id/rest_food"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="@id/rest_food"
+        app:layout_constraintStart_toEndOf="@id/iv_logo"
+        android:gravity="end"
+        android:textColor="#444"
+        app:layout_constraintBottom_toTopOf="@id/divider"
+        android:layout_marginBottom="16dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ccc"
+        android:id="@+id/divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintTop_toBottomOf="@id/rest_time"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
